@@ -205,7 +205,7 @@ async def stop(ctx):
     else:
         return False
 
-@client.command(aliases=['np']pass_context=True)
+@client.command(aliases=['np'], pass_context=True)
 async def now(ctx):
     if not ctx.message.author.bot:
         global playing
